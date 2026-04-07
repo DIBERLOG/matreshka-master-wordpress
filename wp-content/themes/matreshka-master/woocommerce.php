@@ -1,6 +1,8 @@
 <?php
+
 get_header();
-$shop_title = is_singular('product') ? get_the_title() : woocommerce_page_title(false);
+
+$shop_title = is_singular('product') ? get_the_title() : mm_theme_t('Каталог');
 $shop_copy = is_singular('product')
     ? mm_theme_t('Карточка товара с галереей, ценой, описанием и готовностью к покупке через WooCommerce.')
     : mm_theme_t('Готовые изделия, карточки товаров и архитектура WooCommerce, подготовленная для подключения боевого платёжного модуля.');

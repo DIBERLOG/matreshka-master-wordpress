@@ -1,287 +1,240 @@
 <div align="center">
 
 # Matreshka Master
-### Premium WordPress / WooCommerce catalog for a collectible artisan brand
+### Премиальный WordPress / WooCommerce сайт-каталог для бренда коллекционных матрёшек
 
-Custom WordPress project for a premium matryoshka workshop: multilingual-ready architecture, WooCommerce catalog, editable homepage sections, lead forms, and a clean admin workflow for content management.
+Кастомный WordPress-проект с premium UI, WooCommerce-каталогом, редактируемой главной страницей, формами заявок и подготовленной архитектурой под мультиязычность.
 
 ---
 
-[![WordPress](https://img.shields.io/badge/WordPress-Custom_Theme-21759b?style=for-the-badge&logo=wordpress)](#)
-[![WooCommerce](https://img.shields.io/badge/WooCommerce-Catalog_Ready-96588a?style=for-the-badge&logo=woocommerce)](#)
-[![Multilingual](https://img.shields.io/badge/RU%20%2F%20EN%20%2F%20ZH-Architecture_Ready-0f172a?style=for-the-badge)](#)
-[![Local Demo](https://img.shields.io/badge/Local_Demo-http%3A%2F%2Flocalhost%3A8080-1d4ed8?style=for-the-badge)](http://localhost:8080)
+[![GitHub](https://img.shields.io/badge/GitHub-matreshka--master--wordpress-111827?style=for-the-badge&logo=github)](https://github.com/DIBERLOG/matreshka-master-wordpress)
+[![WordPress](https://img.shields.io/badge/WordPress-Custom_Theme-21759b?style=for-the-badge&logo=wordpress)](#-архитектура)
+[![WooCommerce](https://img.shields.io/badge/WooCommerce-Catalog_Ready-96588a?style=for-the-badge&logo=woocommerce)](#-что-реализовано)
+[![RU / EN / ZH](https://img.shields.io/badge/RU_%2F_EN_%2F_ZH-Multilingual_Ready-0f172a?style=for-the-badge)](#-что-было-в-тз)
+[![License](https://img.shields.io/badge/License-DIBERLOG_Portfolio_License-4b5563?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
 
-## Project Gallery
+## Обзор
 
-### Hero
-![Hero](docs/screenshots/homepage-hero.png)
+`Matreshka Master` — это кастомный WordPress-сайт для мастерской коллекционных матрёшек. Проект задумывался как премиальный адаптивный каталог с акцентом на quiet luxury визуал, WooCommerce-архитектуру, понятную админку и подготовку под три языка: русский, английский и китайский.
 
-### Showcase Sections
-![Showcases](docs/screenshots/homepage-showcases.png)
+В репозитории уже собраны:
 
-### FAQ
-![FAQ](docs/screenshots/homepage-faq.png)
+- кастомная WordPress-тема
+- кастомный проектный плагин
+- главная страница по структуре ТЗ
+- WooCommerce-каталог с демо-товарами
+- редактируемые секции через админку
+- формы заявок и сохранение лидов
+- локальный Docker-стенд
+- документация по запуску и редактированию
 
-### WooCommerce Shop
-![Shop](docs/screenshots/shop-page.png)
+## Что было в ТЗ
 
----
+Исходное задание требовало:
 
-## What This Project Is
-
-This repository contains a custom WordPress build for the brand "Matreshka Master":
-
-- custom theme: `wp-content/themes/matreshka-master`
-- custom project plugin: `wp-content/plugins/matreshka-master-core`
-- WooCommerce-based product catalog architecture
-- multilingual-ready structure for Russian / English / Chinese
-- editable homepage sections through WordPress admin
-- showcase carousels, FAQ, contact blocks, and lead forms
-- local Docker setup for fast bootstrapping
-
----
-
-## Initial Technical Brief
-
-The original task required:
-
-- premium adaptive website for the company "Matreshka Master"
-- positioning as a premium global-level handcrafted brand
-- WordPress CMS with manageable admin area
-- WooCommerce catalog and future-ready payment architecture
-- multilingual support: `RU / EN / ZH`
-- premium minimalist UI with quiet luxury direction
-- homepage with:
-  - hero section
-  - printed matryoshka showcase
-  - B2B gifts showcase
-  - portrait matryoshka showcase
-  - elite / VIP orders block
-  - workshop story block
-  - FAQ
-  - footer with contacts and legal links
-- lead capture forms for:
-  - project order
-  - price by photo
-  - corporate proposal
-  - personal manager
-- SEO-friendly structure
-- editable content zones
-- clean maintainable codebase and deployment / support documentation
+- премиальный адаптивный сайт компании «Матрёшка Мастер»
+- WordPress как CMS
+- WooCommerce для каталога и онлайн-оплаты
+- каталог примерно на 100 товаров
+- quiet luxury визуальный стиль
+- главную страницу из нескольких витрин и продающих секций
+- формы заявок для частных и B2B-клиентов
+- мультиязычность: `RU / EN / ZH`
+- удобную админку без зависимости от разработчика
+- SEO-friendly структуру
+- готовность к дальнейшей доработке другим разработчиком
 
 ---
 
-## What Was Implemented
+## Что реализовано
 
 ### Frontend
 
-- premium homepage with dark luxury visual direction
-- hero section with editable eyebrow, title, text, CTA, poster, and video URL
-- three showcase sections:
-  - prints
-  - corporate gifts
-  - portrait matryoshkas
-- adaptive carousels with front/back and before/after switching
-- elite orders section
-- workshop story and stats section
-- FAQ accordion
-- contact / lead capture section
-- responsive header, menu, CTA buttons, and modal behavior
+- премиальная главная страница в тёмной luxury-палитре
+- hero-блок с CTA и редактируемым контентом
+- витрина готовых изделий
+- витрина корпоративных подарков
+- витрина портретных заказов
+- блок «Для элиты»
+- блок о мастерской со статистикой и преимуществами
+- FAQ-аккордеон
+- форма захвата и CTA-переходы
+- адаптивная шапка, меню и мобильная версия
 
-### WordPress Theme
+### Catalog / WooCommerce
 
-- custom WordPress theme with reusable template structure
-- helper layer for options, localized strings, and schema pieces
-- WooCommerce styling layer
-- semantic structure and SEO-ready markup foundation
+- страница магазина с кастомной темизацией
+- демо-каталог товаров
+- русифицированные названия и цены в рублях
+- кастомный внешний вид карточек каталога
+- оформленная страница товара
+- стилизованные вкладки «Описание / Отзывы»
 
-### WordPress Plugin
+### WordPress Admin
 
-- custom post types:
-  - `mm_showcase`
-  - `mm_faq`
-  - `mm_lead`
-- homepage admin metaboxes
-- global project settings page
-- lead form processing and storage in admin
-- webhook / Telegram integration points
-- demo content seeding for local setup
+- редактируемая главная через метабоксы
+- отдельный раздел витрин
+- отдельный раздел FAQ
+- раздел заявок
+- глобальные настройки проекта
+- базовая архитектура для мультиязычности
 
-### Admin Experience
+### Интеграции и архитектура
 
-- editable homepage content from page metaboxes
-- editable showcase cards through a dedicated admin section
-- editable FAQ through a dedicated admin section
-- WooCommerce product management through native `Products`
-- centralized project settings via `Matreshka Master`
-
-### DevOps / Setup
-
-- local Docker stack for WordPress + MySQL
-- bootstrap script for local deployment
-- project docs for setup and editing workflow
+- WooCommerce как база каталога и оплаты
+- подготовка к SMTP, Bitrix, Telegram, WhatsApp и MAX
+- lead storage в админке
+- локальный bootstrap через Docker + WP-CLI
 
 ---
 
-## What Is Completed vs. What Is Still Production-Dependent
+## Что пока зависит от продакшена
 
-### Completed
+Сейчас репозиторий уже годится как сильная рабочая база и demo-case, но для финального production-запуска всё ещё нужны:
 
-- custom WordPress architecture
-- custom theme and core plugin
-- homepage structure from the brief
-- WooCommerce catalog foundation
-- editable admin areas
-- responsive frontend
-- lead forms and lead storage
-- multilingual-ready structure
-- local launch documentation
+- реальные фото и видео
+- финальные тексты на `RU / EN / ZH`
+- юридические страницы и реквизиты
+- боевой SMTP
+- платёжный модуль
+- реальные доступы к Bitrix / Telegram / WhatsApp / MAX
+- финальное решение по мультиязычному WooCommerce-каталогу
 
-### Requires Final Client Materials / Access
-
-- real photo and video content
-- final RU / EN / ZH copy
-- legal pages and business details
-- SMTP credentials
-- payment gateway credentials
-- Bitrix / Telegram / WhatsApp / MAX integration credentials
-
-### Important Limitation
-
-Full multilingual WooCommerce catalog behavior requires one of these production solutions:
+Важно: для полноценного мультиязычного каталога WooCommerce нужен один из production-вариантов:
 
 - `Polylang for WooCommerce`
 - `WPML + WooCommerce Multilingual`
 
-The current build already supports multilingual page architecture, but the full multilingual product catalog flow depends on the final WooCommerce multilingual add-on choice.
+---
+
+## Архитектура
+
+Проект разбит на два основных слоя:
+
+- `wp-content/themes/matreshka-master` — кастомная тема, шаблоны и стили
+- `wp-content/plugins/matreshka-master-core` — проектный плагин с контентными сущностями, метабоксами и формами
+
+Ключевые файлы:
+
+- `wp-content/themes/matreshka-master/woocommerce.php`
+- `wp-content/themes/matreshka-master/assets/css/main.css`
+- `wp-content/themes/matreshka-master/inc/theme-setup.php`
+- `wp-content/plugins/matreshka-master-core/includes/class-mm-admin.php`
+- `wp-content/plugins/matreshka-master-core/includes/class-mm-forms.php`
+- `wp-content/plugins/matreshka-master-core/includes/class-mm-content.php`
 
 ---
 
-## Tech Stack
+## Стек
 
-| Layer | Stack |
-|------|------|
+| Слой | Решение |
+| --- | --- |
 | CMS | WordPress |
-| Catalog | WooCommerce |
-| Multilingual Architecture | Polylang-ready / WPML-ready |
-| Theme | Custom PHP theme |
-| Plugin Layer | Custom project plugin |
-| Frontend | HTML, CSS, vanilla JavaScript |
-| Local Environment | Docker, MySQL, WordPress CLI |
-| SEO Layer | Rank Math-ready foundation |
+| Каталог | WooCommerce |
+| Тема | Custom PHP Theme |
+| Проектная логика | Custom Plugin |
+| Frontend | HTML, CSS, Vanilla JS |
+| Мультиязычная архитектура | Polylang-ready / WPML-ready |
+| Локальная среда | Docker, MySQL, WP-CLI |
+| SEO-слой | Rank Math-ready foundation |
 
 ---
 
-## Repository Structure
+## Структура репозитория
 
 ```text
 .
-├── docker-compose.yml
-├── README.md
-├── docs/
-│   ├── architecture.md
-│   ├── content-editing.md
-│   ├── deployment.md
-│   ├── plugin-inventory.md
-│   └── screenshots/
-├── scripts/
-│   ├── bootstrap.ps1
-│   └── seed-demo.php
-└── wp-content/
-    ├── plugins/
-    │   └── matreshka-master-core/
-    └── themes/
-        └── matreshka-master/
+|- docker-compose.yml
+|- README.md
+|- LICENSE
+|- docs/
+|  |- architecture.md
+|  |- content-editing.md
+|  |- deployment.md
+|  |- plugin-inventory.md
+|  `- screenshots/
+|- scripts/
+|  |- bootstrap.ps1
+|  |- seed-demo.php
+|  `- wp.ps1
+`- wp-content/
+   |- plugins/
+   |  `- matreshka-master-core/
+   `- themes/
+      `- matreshka-master/
 ```
 
 ---
 
-## Local Launch
-
-### Requirements
-
-- Docker Desktop
-- Windows PowerShell
-
-### Start
+## Локальный запуск
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap.ps1
 ```
 
-### URLs
+После запуска:
 
-- frontend: [http://localhost:8080](http://localhost:8080)
-- admin: [http://localhost:8080/wp-admin](http://localhost:8080/wp-admin)
+- фронт: [http://localhost:8080](http://localhost:8080)
+- админка: [http://localhost:8080/wp-admin](http://localhost:8080/wp-admin)
 
-### Default Local Credentials
+Локальные учётные данные по умолчанию:
 
-- login: `admin`
-- password: `admin`
-
----
-
-## What The Bootstrap Script Does
-
-- starts MySQL and WordPress containers
-- waits for database readiness
-- installs WordPress locally
-- activates the custom theme
-- activates the project plugin
-- installs and activates:
-  - WooCommerce
-  - Polylang
-  - Rank Math SEO
-  - WP Mail SMTP
-- seeds demo homepage content, showcases, FAQ, and sample products
+- логин: `admin`
+- пароль: `admin`
 
 ---
 
-## Admin Editing Flow
+## Документация
 
-### Homepage
+- [Архитектура](docs/architecture.md)
+- [Редактирование контента](docs/content-editing.md)
+- [Развёртывание](docs/deployment.md)
+- [Плагины и зависимости](docs/plugin-inventory.md)
 
-- open the static homepage in `Pages`
-- edit metaboxes for:
-  - Hero
-  - Sections
-  - Elite
-  - Workshop
-  - Contact block
+---
 
-### Showcases
+## Лицензия
 
-- open `Витрины`
-- manage cards for:
-  - prints
-  - corporate
-  - portrait
+Репозиторий опубликован по кастомной лицензии `DIBERLOG Portfolio License`.
+
+Использование кода и материалов разрешено только для просмотра, оценки и портфолио-демонстрации. Любое копирование, коммерческое использование, переработка и переиспользование без письменного разрешения автора запрещены.
+
+См. файл [LICENSE](LICENSE).
+
+---
+
+## Галерея
+
+### Hero
+![Hero](docs/screenshots/homepage-hero-ru.png)
+
+### Витрина: матрёшки с принтами
+![Prints Showcase](docs/screenshots/homepage-prints-ru.png)
+
+### Витрина: корпоративные подарки
+![Corporate Showcase](docs/screenshots/homepage-corporate-ru.png)
+
+### Витрина: портретные матрёшки
+![Portrait Showcase](docs/screenshots/homepage-portrait-ru.png)
 
 ### FAQ
+![FAQ](docs/screenshots/homepage-faq-ru.png)
 
-- open `FAQ`
-- each entry is one question / answer item
+### Блок о мастерской
+![Workshop](docs/screenshots/homepage-workshop-ru.png)
 
-### Catalog
+### Каталог
+![Catalog](docs/screenshots/catalog-grid-ru.png)
 
-- open `Products`
-- manage categories, prices, gallery, descriptions, and stock fields via WooCommerce
+### Карточка товара
+![Product Page](docs/screenshots/product-page-ru.png)
 
-### Global Settings
+### Вкладки товара
+![Product Tabs](docs/screenshots/product-tabs-ru.png)
 
-- open `Matreshka Master`
-- edit contacts, social links, legal URLs, messages, and integration endpoints
-
----
-
-## Notes
-
-- This project was built as a reusable premium WordPress catalog foundation.
-- The repository contains the codebase and local setup, not a production deployment.
-- The current visual content includes demo placeholders and seeded sample data for presentation and дальнейшей адаптации.
-
+### Отзывы и форма
+![Product Reviews](docs/screenshots/product-reviews-ru.png)

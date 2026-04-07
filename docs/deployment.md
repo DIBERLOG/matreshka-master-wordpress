@@ -1,31 +1,60 @@
 # Развёртывание
 
-## Локальная разработка
+## Локальный запуск
 
-- использовать `docker-compose.yml`
-- запускать `scripts/bootstrap.ps1`
+Требования:
 
-## Production
+- Docker Desktop
+- PowerShell
 
-1. Развернуть обычный WordPress-хостинг.
-2. Перенести:
-   - `wp-content/themes/matreshka-master`
-   - `wp-content/plugins/matreshka-master-core`
-3. Установить обязательные плагины:
-   - WooCommerce
-   - multilingual plugin
-   - SEO plugin
-   - SMTP plugin
-   - платёжный модуль
-4. Подключить реальные ключи и webhook-URL.
-5. Заменить placeholder-контент на production материалы.
+Запуск:
 
-## Что проверить перед публикацией
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap.ps1
+```
 
-- переводы RU / EN / ZH
-- рабочий checkout
-- почта форм
-- Telegram / Bitrix / WhatsApp / MAX интеграции
-- legal pages
-- реальные контакты
-- favicon, OG и SEO-метаданные
+После завершения:
+
+- сайт: `http://localhost:8080`
+- админка: `http://localhost:8080/wp-admin`
+
+Локальные данные:
+
+- логин: `admin`
+- пароль: `admin`
+
+## Что делает bootstrap
+
+- поднимает MySQL и WordPress контейнеры
+- ждёт готовности базы
+- устанавливает WordPress
+- активирует тему
+- активирует проектный плагин
+- ставит и активирует публичные зависимости
+- наполняет проект demo-контентом
+
+## Production checklist
+
+Перед боевым запуском необходимо:
+
+- загрузить реальные фото и видео
+- заполнить финальные тексты
+- подключить SMTP
+- подключить платёжный модуль
+- настроить формы и CRM-интеграции
+- определиться с multilingual WooCommerce add-on
+- проверить все CTA и формы
+- пройти финальный mobile QA
+
+## Рекомендуемый порядок production-подключения
+
+1. Хостинг и домен
+2. WordPress
+3. Тема и проектный плагин
+4. WooCommerce
+5. Мультиязычный add-on
+6. Платёжный шлюз
+7. SMTP
+8. CRM / мессенджеры
+9. SEO-настройка
+10. Контент и финальное тестирование

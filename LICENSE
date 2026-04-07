@@ -3,15 +3,38 @@ DIBERLOG Portfolio License v1.0
 Copyright (c) 2026 DIBERLOG
 All rights reserved.
 
+Russian version
+
+1. Этот репозиторий и его содержимое предоставляются исключительно для портфолио, просмотра и оценки проекта.
+
+2. Разрешается просматривать исходный код и материалы проекта только в личных ознакомительных целях.
+
+3. Без предварительного письменного разрешения автора запрещается:
+   - копировать код, структуру, стили, графику и другие материалы полностью или частично;
+   - распространять репозиторий или его содержимое;
+   - изменять проект и создавать производные работы для публичного или коммерческого использования;
+   - использовать код, дизайн, структуру контента или визуальные материалы в клиентских проектах, шаблонах, продуктах или маркетплейсах;
+   - удалять указание авторства или присваивать авторство себе.
+
+4. Любое коммерческое использование любой части этого репозитория без явного письменного разрешения автора строго запрещено.
+
+5. Проект предоставляется «как есть», без каких-либо гарантий, явных или подразумеваемых.
+
+6. Автор сохраняет все права интеллектуальной собственности на кодовую базу, компоновку, стили, документацию и медиафайлы, содержащиеся в этом репозитории.
+
+7. По вопросам лицензирования и получения разрешения необходимо связаться с автором через профиль репозитория.
+
+English version
+
 1. This repository and its contents are provided for portfolio, review, and evaluation purposes only.
 
-2. You may view the source code and project materials for personal inspection.
+2. You may view the source code and project materials for personal inspection only.
 
 3. You may not, without prior written permission from the author:
-   - copy the code or assets in whole or in part;
+   - copy the code, structure, styles, graphics, or other materials in whole or in part;
    - redistribute the repository or its contents;
-   - modify or create derivative works for public or commercial use;
-   - use the code, design, content structure, or visual assets in client work, products, templates, or marketplaces;
+   - modify the project or create derivative works for public or commercial use;
+   - use the code, design, content structure, or visual assets in client work, templates, products, or marketplaces;
    - remove attribution or claim authorship.
 
 4. Commercial use of any part of this repository is strictly prohibited without explicit written permission from the author.
@@ -20,4 +43,4 @@ All rights reserved.
 
 6. The author retains all intellectual property rights to the codebase, layout, styling, documentation, and bundled media contained in this repository.
 
-For licensing inquiries, contact the author directly through the repository profile.
+7. For licensing inquiries and permission requests, contact the author directly through the repository profile.

@@ -1,0 +1,24 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091528"/>
+      <stop offset="0.55" stop-color="#16253D"/>
+      <stop offset="1" stop-color="#4B545E"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="850" y1="140" x2="850" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F4FA"/>
+      <stop offset="1" stop-color="#9FAABD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1170" cy="260" r="180" fill="white" fill-opacity="0.08"/>
+  <circle cx="1320" cy="160" r="80" fill="white" fill-opacity="0.08"/>
+  <path d="M786 170C707 190 650 279 650 378C650 461 686 517 740 581C631 659 574 760 574 861H1128C1128 760 1069 659 960 581C1014 517 1050 461 1050 378C1050 279 993 190 914 170C899 137 869 116 850 116C831 116 801 137 786 170Z" fill="url(#figure)" fill-opacity="0.94"/>
+  <path d="M744 352C793 325 907 325 956 352" stroke="#1A2537" stroke-width="14" stroke-linecap="round"/>
+  <path d="M780 430C815 457 885 457 920 430" stroke="#1A2537" stroke-width="12" stroke-linecap="round"/>
+  <path d="M772 255C784 290 816 316 850 316C884 316 916 290 928 255" stroke="#E6EDF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M741 560C795 602 905 602 959 560" stroke="#172337" stroke-width="12" stroke-linecap="round"/>
+  <text x="132" y="794" fill="#F2F5FA" font-family="Georgia, serif" font-size="110" letter-spacing="6">MATRESHKA</text>
+  <text x="132" y="884" fill="#B5C0D1" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">HAND-PAINTED COLLECTIBLE ATELIER</text>
+</svg>
+

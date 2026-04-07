@@ -1,0 +1,56 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: matreshka-master-db
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+  wordpress:
+    image: wordpress:php8.2-apache
+    container_name: matreshka-master-wp
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - ./:/var/www/html/project
+      - wp_data:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+    ports:
+      - "8080:80"
+
+  wpcli:
+    image: wordpress:cli-php8.2
+    container_name: matreshka-master-cli
+    depends_on:
+      - db
+      - wordpress
+    entrypoint: ["wp"]
+    working_dir: /var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    volumes:
+      - wp_data:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+      - ./:/var/www/html/project
+
+volumes:
+  db_data:
+  wp_data:

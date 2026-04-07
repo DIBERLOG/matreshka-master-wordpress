@@ -1,0 +1,18 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="1200">
+      <stop stop-color="#141A21"/>
+      <stop offset="1" stop-color="#3F4954"/>
+    </linearGradient>
+    <linearGradient id="doll" x1="480" y1="180" x2="480" y2="1040">
+      <stop stop-color="#F5F5F5"/>
+      <stop offset="1" stop-color="#D1D4D8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" rx="48" fill="url(#bg)"/>
+  <path d="M421 215C354 236 304 317 304 405C304 482 336 537 384 590C293 652 244 741 244 922H716C716 741 667 652 576 590C624 537 656 482 656 405C656 317 606 236 539 215C530 187 505 160 480 160C455 160 430 187 421 215Z" fill="url(#doll)"/>
+  <rect x="350" y="560" width="260" height="190" rx="26" fill="#101820"/>
+  <text x="387" y="668" fill="#F2F5F8" font-family="Arial, sans-serif" font-size="76" font-weight="700">B2B</text>
+  <text x="110" y="1080" fill="#EDF2F8" font-family="Georgia, serif" font-size="72">Corporate Edition</text>
+</svg>
+

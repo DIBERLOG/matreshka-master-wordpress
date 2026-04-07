@@ -1,0 +1,20 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="1200">
+      <stop stop-color="#0C1118"/>
+      <stop offset="1" stop-color="#4A5563"/>
+    </linearGradient>
+    <linearGradient id="doll" x1="480" y1="180" x2="480" y2="1040">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C0C7D1"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" rx="48" fill="url(#bg)"/>
+  <path d="M421 215C354 236 304 317 304 405C304 482 336 537 384 590C293 652 244 741 244 922H716C716 741 667 652 576 590C624 537 656 482 656 405C656 317 606 236 539 215C530 187 505 160 480 160C455 160 430 187 421 215Z" fill="url(#doll)"/>
+  <path d="M354 560H606" stroke="#1B2432" stroke-width="18" stroke-linecap="round"/>
+  <path d="M330 640H630" stroke="#1B2432" stroke-width="18" stroke-linecap="round"/>
+  <path d="M302 720H658" stroke="#1B2432" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="480" cy="640" r="138" stroke="#1B2432" stroke-width="18"/>
+  <text x="160" y="1080" fill="#EDF2F8" font-family="Georgia, serif" font-size="72">Logo Placement</text>
+</svg>
+

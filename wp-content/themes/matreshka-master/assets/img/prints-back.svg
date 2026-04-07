@@ -1,0 +1,19 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="1200">
+      <stop stop-color="#0A1018"/>
+      <stop offset="1" stop-color="#334760"/>
+    </linearGradient>
+    <linearGradient id="doll" x1="480" y1="180" x2="480" y2="1040">
+      <stop stop-color="#F8FAFD"/>
+      <stop offset="1" stop-color="#AAB6C5"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" rx="48" fill="url(#bg)"/>
+  <path d="M421 215C354 236 304 317 304 405C304 482 336 537 384 590C293 652 244 741 244 922H716C716 741 667 652 576 590C624 537 656 482 656 405C656 317 606 236 539 215C530 187 505 160 480 160C455 160 430 187 421 215Z" fill="url(#doll)"/>
+  <path d="M365 555C432 615 528 643 603 607" stroke="#1D2938" stroke-width="18" stroke-linecap="round"/>
+  <path d="M332 648C421 724 545 753 643 705" stroke="#1D2938" stroke-width="18" stroke-linecap="round"/>
+  <path d="M307 742C425 821 580 852 692 792" stroke="#1D2938" stroke-width="18" stroke-linecap="round"/>
+  <text x="128" y="1080" fill="#EDF2F8" font-family="Georgia, serif" font-size="72">Back Artwork</text>
+</svg>
+

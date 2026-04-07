@@ -1,0 +1,14 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="1200">
+      <stop stop-color="#2A1D17"/>
+      <stop offset="1" stop-color="#6B5746"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" rx="48" fill="url(#bg)"/>
+  <rect x="168" y="170" width="624" height="860" rx="40" fill="#EFE3D6"/>
+  <circle cx="480" cy="425" r="150" fill="#D6B594"/>
+  <path d="M322 704C369 608 591 608 638 704V820H322V704Z" fill="#9A6C4A"/>
+  <text x="198" y="962" fill="#3E281B" font-family="Georgia, serif" font-size="64">Reference Photo</text>
+</svg>
+
